@@ -1,0 +1,8 @@
+<h1>Translation Cards</h1>
+<%= link_to 'Criar Card', new_card_path  %>
+<% @cards.each do |card| %>
+  <div>
+    <h2><%= card.front %></h2>
+    <%= link_to('Ver tradução', card) %>
+  </div>
+<% end %>

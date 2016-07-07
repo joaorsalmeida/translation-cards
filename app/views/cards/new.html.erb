@@ -1,0 +1,8 @@
+<h1>Criar Card</h1>
+<%= form_for @card do |f|  %>
+  <%= f.label :front  %>
+  <%= f.text_field :front  %>
+  <%= f.label :back %>
+  <%= f.text_field :back %>
+  <%= f.submit %>
+<% end %>

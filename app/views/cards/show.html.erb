@@ -1,0 +1,12 @@
+<h1><%= @card.front %></h1>
+<h2><%= @card.back %></h2>
+<section>
+  <h3>Comments</h3>
+  <% @card.comments.each do |comment| %>
+    <p>
+    <strong><%= comment.author %></strong><br>
+    <%= comment.body %>
+    </p>
+  <% end %>
+</section>
+<%= link_to 'Voltar', root_path %>
